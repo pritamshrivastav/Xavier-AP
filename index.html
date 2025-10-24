@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xavier: Hairstyle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div>
+        <div class="logo">Xavier: Hairstyle</div>
+        <div class="tagline">Book your appointment now! Xavier saves your time.</div>
+      </div>
+      <button class="login-btn">Login / Sign Up</button>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+      <h2>Find Your Style & Salon</h2>
+      <div class="search-box">
+        <input type="text" id="addressInput" placeholder="Your Address" aria-label="Your Address" />
+        <select id="hairstyleSelect" aria-label="Select hairstyle category">
+          <option value="men">Hairstyles (Men)</option>
+          <option value="women">Hairstyles (Women)</option>
+        </select>
+        <select id="facialSelect" aria-label="Select facial or essentials">
+          <option value="essentials">Facial / Other Essentials</option>
+          <option value="beard">Beard Trim</option>
+          <option value="scalp">Scalp Treatment</option>
+        </select>
+        <button class="search-btn" id="searchButton">Search by Location</button>
+      </div>
+    </section>
+
+    <!-- Top Hairstyles -->
+    <section>
+      <h2 class="section-title">Top Hairstyles (Popular Picks)</h2>
+      <div class="hairstyles-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1507019130733-8d131a815a2a?auto=format&fit=crop&w=300&q=80" alt="Classic Fade hairstyle" />
+          <div class="card-content"><h3>Classic Fade</h3></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=300&q=80" alt="Long Layers hairstyle" />
+          <div class="card-content"><h3>Long Layers</h3></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=300&q=80" alt="Buzz Cut hairstyle" />
+          <div class="card-content"><h3>Buzz Cut</h3></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3b3?auto=format&fit=crop&w=300&q=80" alt="Balayage hairstyle" />
+          <div class="card-content"><h3>Balayage</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Salons -->
+    <section>
+      <h2 class="section-title">Popular Salons in Your Area</h2>
+      <div class="salons-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=300&q=80" alt="Xavier Downtown salon" />
+          <div class="card-content"><h3>Xavier Downtown</h3></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1521490413176-9e5b5cb7877d?auto=format&fit=crop&w=300&q=80" alt="Xavier Heights salon" />
+          <div class="card-content"><h3>Xavier Heights</h3></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a842?auto=format&fit=crop&w=300&q=80" alt="Xavier Westside salon" />
+          <div class="card-content"><h3>Xavier Westside</h3></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1521334884684-d51552a7bb20?auto=format&fit=crop&w=300&q=80" alt="Xavier East Plaza salon" />
+          <div class="card-content"><h3>Xavier East Plaza</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Xavier Hairstyle. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

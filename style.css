@@ -1,0 +1,230 @@
+/* Root Variables */
+:root {
+  --primary: #f5f0e6;
+  --secondary: #e8dcc5;
+  --accent: #d4c9a8;
+  --text: #4a4947;
+  --gold: #c9b07b;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--accent);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--gold);
+  margin-top: 5px;
+}
+
+.login-btn {
+  background-color: var(--gold);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #b59d6b;
+  transform: translateY(-2px);
+}
+
+/* Search Section */
+.search-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.search-box input,
+.search-box select {
+  padding: 12px 15px;
+  border: 1px solid var(--accent);
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 220px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-box select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4'%3E%3Cpath fill='%23c9b07b' d='M287 69.4a17.5 17.5 0 0 0-13-5.4H18.4C3.6 64 0.8 88.5 10.5 98.2l133.3 133.3c9.7 9.7 24.5 9.7 34.2 0L287 108.2c9.7-9.7 9.7-24.5 0-34.2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+}
+
+.search-btn {
+  background-color: var(--gold);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #b59d6b;
+  transform: scale(1.05);
+}
+
+/* Sections Headings */
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 1.8rem;
+  color: var(--text);
+}
+
+/* Card Grid Layouts */
+.hairstyles-grid,
+.salons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+  color: var(--text);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--accent);
+}
+
+/* Hover Animation Enhancements */
+button,
+.card {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .search-box input,
+  .search-box select {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box input,
+  .search-box select {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .login-btn {
+    width: 100%;
+    max-width: 180px;
+  }
+}
